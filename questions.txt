@@ -1,0 +1,14 @@
+Questions:
+a) When trying different threads and ammounts of numbers I found that the time
+does not change much. The final time is usually around 1ms little bit less or more
+but of course the more numbers there are the longer it takes. I also noticed that the 
+more threads there are the longer it takes but that could be an error in my calculation.
+b) The behavior makes sense since these threads are not truly working at the same time they
+start and stop following the thread prevois to it which causes it to take time. Along with
+this the more numbers it has to calculate makes it take longer.
+c) The critical ection refers to the area where the threads are functioning but not
+at the same time. For this I made sure that the start and stop indexes reliad on the thread count. 
+If there were 2 threads thread 1 would go then thread 2 would go after thread one was finished.
+Extra: If I had to make a guess as to what would happen I feel like that transfer
+might not be possible if its expecting an array of ints to add together or it might loop over the same thread
+over and over again.
